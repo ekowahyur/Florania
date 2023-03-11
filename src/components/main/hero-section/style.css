@@ -1,0 +1,141 @@
+.hero-section {
+  padding-top: 200px;
+}
+
+.hero-section .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 47%;
+  animation: move-right 0.5s ease-out forwards;
+}
+
+.hero-section:hover .hero-text {
+  animation: move-left-hover 0.25s ease-out forwards;
+}
+
+.hero-section .hero-text h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.hero-section .hero-text h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.hero-section .hero-banner {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  width: 100%;
+}
+
+.hero-section .hero-banner .groundcover,
+.hero-section .hero-banner .vines,
+.hero-section .hero-banner .directional,
+.hero-section .hero-banner .shade,
+.hero-section .hero-banner .plants,
+.hero-section .hero-banner .vegetable {
+  position: relative;
+}
+
+.hero-section .hero-banner img {
+  width: 100px;
+  height: 523px;
+  border-radius: 12px;
+  object-fit: cover;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.hero-section .hero-banner img:hover {
+  width: 560px;
+}
+
+.hero-section .hero-banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 47%;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #e3e3e3;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+
+.hero-section .hero-banner .banner-text .hover-text {
+  display: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #e3e3e3;
+}
+
+.hero-section .hero-banner img:hover + .banner-text {
+  transform: rotate(0deg);
+}
+
+.hero-section .hero-banner img:hover + .banner-text .hover-text {
+  animation: show-hover-rext 0.5s ease-in forwards;
+  display: block;
+}
+
+@keyframes move-left-hover {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(-450px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes show-hover-text {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    display: absolute;
+  }
+}

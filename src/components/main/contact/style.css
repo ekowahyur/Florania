@@ -1,0 +1,47 @@
+.contact {
+  padding-top: 160px;
+}
+
+.contact .contact-bg {
+  border-radius: 12px;
+  position: relative;
+}
+
+.contact .contact-bg img {
+  width: 100%;
+}
+
+.contact .contact-bg .logo-bg {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  top: 91px;
+  left: 323px;
+}
+
+.contact .contact-bg .contact-bg-text p {
+  position: absolute;
+  left: 660px;
+  top: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.contact .contact-bg .contact-bg-text .contact-us {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 43px;
+  left: 949px;
+  top: 95px;
+  background: #ecf39e;
+  border-radius: 24px;
+  cursor: pointer;
+}

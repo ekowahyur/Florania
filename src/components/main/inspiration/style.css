@@ -1,0 +1,175 @@
+.inspiration {
+  padding-top: 200px;
+}
+
+.inspiration .row {
+  display: block;
+}
+
+.inspiration .inspiration-text {
+  text-align: center;
+}
+
+.inspiration .inspiration-text h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.inspiration .inspiration-text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #656565;
+  padding-top: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+.inspiration .inspiration-banner {
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.inspiration .inspiration-banner .from-gardener,
+.inspiration .inspiration-banner .from-designer,
+.inspiration .inspiration-banner .local-community,
+.inspiration .inspiration-banner .online-offline-shop {
+  position: relative;
+}
+
+.inspiration .inspiration-banner img {
+  width: 160px;
+  height: 310px;
+  border-radius: 12px;
+  object-fit: cover;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.inspiration .inspiration-banner img:hover {
+  width: 192px;
+  height: 372px;
+}
+
+.inspiration .inspiration-banner .banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.inspiration .inspiration-banner .banner-text p {
+  width: 0;
+  height: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  animation: move-from-top 0.75s ease-in forwards;
+}
+
+.inspiration .inspiration-banner img:hover + .banner-text p {
+  animation: move-up-hover 0.75s ease-out forwards;
+}
+
+.inspiration .inspiration-banner .banner-text .hover-text {
+  display: flex;
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 50px;
+  width: 150px;
+  animation: move-to-bottom 0.65s ease-out forwards;
+}
+
+.inspiration .inspiration-banner .banner-text .hover-text li {
+  list-style: disc;
+}
+
+.inspiration .inspiration-banner img:hover + .banner-text .hover-text {
+  display: flex;
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 50px;
+  width: 150px;
+  animation: move-from-bottom-hover 0.65s ease-in forwards;
+}
+
+.inspiration .inspiration-banner img:hover + .banner-text .hover-text li {
+  list-style: disc;
+}
+
+@keyframes move-up-hover {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes move-from-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move-from-bottom-hover {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move-to-bottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
