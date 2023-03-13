@@ -81,6 +81,7 @@
   white-space: nowrap;
   transform: rotate(-90deg);
   transition: 0.5s;
+  pointer-events: none;
 }
 
 .hero-section .hero-banner .banner-text .hover-text {
@@ -92,6 +93,7 @@
   line-height: 19px;
   text-align: center;
   color: #e3e3e3;
+  pointer-events: none;
 }
 
 .hero-section .hero-banner img:hover + .banner-text {
